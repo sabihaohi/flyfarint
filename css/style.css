@@ -1,9 +1,11 @@
 * {
-    padding: 0%;
     margin: 0% !important;
 }
+body {
+    padding: 0 !important;
+}
 .nav {
-    width: 250px;
+    width: 275px;
 }
 
 .accordion-button {
@@ -37,6 +39,7 @@
     margin-right: 10px;
 }
 
+
 .manage1 {
     color: rgb(49, 197, 197);
 }
@@ -67,4 +70,34 @@
     font-weight: 500 !important;
     font-size: 14px;
     color: rgba(0, 0, 0, 0.863);
+}
+
+.boxes-4{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.bottom-boxes3{
+    width: 31%;
+}
+
+@media only screen and (max-width: 992px) {
+    .bottom-boxes3{
+        width: 60%;
+        margin: auto !important;
+        margin-bottom: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 688px) {
+    .boxes-4{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .bottom-boxes3{
+        width: 80%;
+        margin: auto !important;
+        margin-bottom: 15px !important;
+    }
 }

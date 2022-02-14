@@ -15,12 +15,12 @@
 
 <body>
     <div class="container-fluid d-flex">
-        <nav class="nav">
+        <nav class="nav d-none d-md-block">
             <div class="w-50 mx-auto mt-4">
                 <img src="images/logo.png" alt="fly far logo" class="img-fluid">
             </div>
 
-            <div class="w-100">
+            <div class="w-100 mt-4">
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item border-0">
                         <h2 class="accordion-header fs-1" id="flush-headingOne">
@@ -146,24 +146,175 @@
                 </div>
             </div>
         </nav>
-        <main class="ms-2 w-100">
-            <section class="d-flex justify-content-between text-center text-secondary mt-4" style="font-weight: 600;">
-                <div class="card" style="width: 22%;">
+        <main class="mx-2 w-100">
+            <div class="d-md-none d-flex justify-content-between align-items-center">
+                <div class="mt-3" style="width: 125px;">
+                    <img src="images/logo.png" alt="fly far logo" class="img-fluid">
+                </div>
+                <button class="btn mt-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                    aria-controls="offcanvasScrolling"><i class="fas fa-bars fs-2"></i></button>
+            </div>
+
+            <!-- Off Canvus Start -->
+            <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                <div class="offcanvas-header">
+                    <div class="w-50 mx-auto mt-4">
+                        <img src="images/logo.png" alt="fly far logo" class="img-fluid">
+                    </div>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <nav class="nav">
+
+                        <div class="w-100 mt-4">
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header fs-1" id="flush-headingOne">
+                                        <button class="accordion-button collapsed fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Dashboard
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    </div>
+                                </div>
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Invoice
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse ps-1"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body border-start ms-4 list-group p-0 fw-bold">
+                                            <li class="list-group-item border-0">
+                                                Air Ticket
+                                            </li>
+                                            <li class="list-group-item border-0 active-items">
+                                                Service Package
+                                            </li>
+                                            <li class="list-group-item border-0">
+                                                Tour Package
+                                            </li>
+                                            <li class="list-group-item border-0">
+                                                Visa
+                                            </li>
+                                            <li class="list-group-item border-0">
+                                                Inshurance
+                                            </li>
+                                            <li class="list-group-item border-0">
+                                                Number Five
+                                            </li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Sales Ouataion
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                    </div>
+                                </div>
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="flush-headingFour">
+                                        <button class="accordion-button collapsed fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFour"
+                                            aria-expanded="false" aria-controls="flush-collapseFour">
+                                            Money Reciept
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFour" class="accordion-collapse collapse border-0"
+                                        aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                    </div>
+                                </div>
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="flush-headingFive">
+                                        <button class="accordion-button collapsed fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseFive"
+                                            aria-expanded="false" aria-controls="flush-collapseFive">
+                                            Expense
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                    </div>
+                                </div>
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="flush-headingSix">
+                                        <button class="accordion-button collapsed fw-bold" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseSix"
+                                            aria-expanded="false" aria-controls="flush-collapseSix">
+                                            Account Setup
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseSix" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-100 mt-4 ms-3 mb-2">
+                            <div class="management">
+                                MANAGEMENT
+                            </div>
+                            <div>
+                                <div class="fs-6 fw-bold manage1 mb-1 ps-1">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Attendence</span>
+                                </div>
+                                <div class="fs-6 fw-bold manage2 mb-1 ps-1">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Leave Application</span>
+                                </div>
+                                <div class="fs-6 fw-bold manage3 mb-2 ps-1">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Rocky Bamboo</span>
+                                    <i class="fas fa-exclamation-circle fs-6 text-secondary"></i>
+                                </div>
+                                <div class="fs-6 fw-bold manage4 mb-1 ps-1">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Kach Van Negger</span>
+                                </div>
+                                <div class="fs-6 fw-bold manage5 mb-1 ps-1">
+                                    <i class="fas fa-circle"></i>
+                                    <span>Rejoin Feedback</span>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Off Canvus End -->
+
+            <section class="boxes-4 text-center text-secondary mt-4" style="font-weight: 600;">
+                <div class="card">
                     <div class="card-body">
                         <p>Payable <br> <span>50,000 TK</span></p>
                     </div>
                 </div>
-                <div class="card border-primary" style="width: 22%;">
+                <div class="card border-primary">
                     <div class="card-body">
                         <p class="text-primary">Unearned <br> <span>60,000 TK</span></p>
                     </div>
                 </div>
-                <div class="card" style="width: 22%;">
+                <div class="card">
                     <div class="card-body">
                         <p>Receivable <br> <span>10,000 TK</span></p>
                     </div>
                 </div>
-                <div class="card" style="width: 22%;">
+                <div class="card">
                     <div class="card-body">
                         <p>Prepaid <br> <span>6,000 TK</span></p>
                     </div>
@@ -214,120 +365,120 @@
                 </div>
             </div>
 
-            <section class="d-flex justify-content-between text-center text-primary mt-4" style="font-weight: 600;">
-                <div class="card  border-primary" style="width: 22%;">
+            <section class="boxes-4 text-center text-primary mt-4" style="font-weight: 600;">
+                <div class="card  border-primary">
                     <div class="card-body">
                         <p>Today Sales<br> <span>60,000 TK</span></p>
                     </div>
                 </div>
-                <div class="card border-primary" style="width: 22%;">
+                <div class="card border-primary">
                     <div class="card-body">
                         <p>Purchase <br> <span>60,000 TK</span></p>
                     </div>
                 </div>
-                <div class="card  border-primary" style="width: 22%;">
+                <div class="card  border-primary">
                     <div class="card-body">
                         <p>Earning <br> <span>60,000 TK</span></p>
                     </div>
                 </div>
-                <div class="card border-primary" style="width: 22%;">
-                    <div class="card-body">
-                        <p>Expenses <br> <span>60,000 TK</span></p>
-                    </div>
+                <div class="card border-primary"">
+                    <div class=" card-body">
+                    <p>Expenses <br> <span>60,000 TK</span></p>
                 </div>
-            </section>
+    </div>
+    </section>
 
-            <section class="mt-4 d-flex justify-content-between">
-                <div class="card" style="width: 31%;">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="my-0">Vendor Refund</h6>
-                            <p class="my-0 text-primary">5896315 TK</p>
-                        </div>
-                        <div class="mt-4">
-                            <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
-                                <p class="inner-title">Refund in Process</p>
-                                <p class="text-secondary">45</p>
-                                <p class="text-secondary">60,000 TK</p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
-                                <p class="inner-title">Refund Unsetteled</p>
-                                <p class="text-secondary">45</p>
-                                <p class="text-secondary">60,000 TK</p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
-                                <p class="inner-title">Refund Setteled</p>
-                                <p class="text-secondary">45</p>
-                                <p class="text-secondary">60,000 TK</p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
-                                <p class="inner-title">Refund not in process</p>
-                                <p class="text-secondary">45</p>
-                                <p class="text-secondary">60,000 TK</p>
-                            </div>
-                        </div>
+    <section class="mt-4 d-block d-lg-flex justify-content-between">
+        <div class="card bottom-boxes3">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h6 class="my-0">Vendor Refund</h6>
+                    <p class="my-0 text-primary">5896315 TK</p>
+                </div>
+                <div class="mt-4">
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
+                        <p class="inner-title">Refund in Process</p>
+                        <p class="text-secondary">45</p>
+                        <p class="text-secondary">60,000 TK</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
+                        <p class="inner-title">Refund Unsetteled</p>
+                        <p class="text-secondary">45</p>
+                        <p class="text-secondary">60,000 TK</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
+                        <p class="inner-title">Refund Setteled</p>
+                        <p class="text-secondary">45</p>
+                        <p class="text-secondary">60,000 TK</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
+                        <p class="inner-title">Refund not in process</p>
+                        <p class="text-secondary">45</p>
+                        <p class="text-secondary">60,000 TK</p>
                     </div>
                 </div>
-                <div class="card" style="width: 31%;">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="my-0">Client Refund</h6>
-                            <p class="my-0 text-primary">5896315 TK</p>
-                        </div>
-                        <div class="mt-4">
-                            <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
-                                <p class="inner-title">Refund in Process</p>
-                                <p class="text-secondary">45</p>
-                                <p class="text-secondary">60,000 TK</p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
-                                <p class="inner-title">Refund Unsetteled</p>
-                                <p class="text-secondary">45</p>
-                                <p class="text-secondary">60,000 TK</p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
-                                <p class="inner-title">Refund Setteled</p>
-                                <p class="text-secondary">45</p>
-                                <p class="text-secondary">60,000 TK</p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
-                                <p class="inner-title">Refund not in process</p>
-                                <p class="text-secondary">45</p>
-                                <p class="text-secondary">60,000 TK</p>
-                            </div>
-                        </div>
+            </div>
+        </div>
+        <div class="card bottom-boxes3">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h6 class="my-0">Client Refund</h6>
+                    <p class="my-0 text-primary">5896315 TK</p>
+                </div>
+                <div class="mt-4">
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
+                        <p class="inner-title">Refund in Process</p>
+                        <p class="text-secondary">45</p>
+                        <p class="text-secondary">60,000 TK</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
+                        <p class="inner-title">Refund Unsetteled</p>
+                        <p class="text-secondary">45</p>
+                        <p class="text-secondary">60,000 TK</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
+                        <p class="inner-title">Refund Setteled</p>
+                        <p class="text-secondary">45</p>
+                        <p class="text-secondary">60,000 TK</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
+                        <p class="inner-title">Refund not in process</p>
+                        <p class="text-secondary">45</p>
+                        <p class="text-secondary">60,000 TK</p>
                     </div>
                 </div>
-                <div class="card" style="width: 31%;">
-                    <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <h6 class="my-0">Unsatteled Transsection</h6>
-                            <p class="my-0 text-primary">5896315 TK</p>
-                        </div>
-                        <div class="mt-4">
-                            <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
-                                <p class="inner-title">Bank</p>
-                                <p class="text-secondary">45</p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
-                                <p class="inner-title">Mobile Banking</p>
-                                <p class="text-secondary">45</p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
-                                <p class="inner-title">Portal</p>
-                                <p class="text-secondary">45</p>
-                            </div>
-                            <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
-                                <p class="inner-title">Cash</p>
-                                <p class="text-secondary">45</p>
-                            </div>
-                        </div>
+            </div>
+        </div>
+        <div class="card bottom-boxes3">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h6 class="my-0">Unsatteled Transsection</h6>
+                    <p class="my-0 text-primary">5896315 TK</p>
+                </div>
+                <div class="mt-4">
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
+                        <p class="inner-title">Bank</p>
+                        <p class="text-secondary">45</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
+                        <p class="inner-title">Mobile Banking</p>
+                        <p class="text-secondary">45</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
+                        <p class="inner-title">Portal</p>
+                        <p class="text-secondary">45</p>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center border-bottom mb-2 pb-1">
+                        <p class="inner-title">Cash</p>
+                        <p class="text-secondary">45</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
 
 
-        </main>
+    </main>
     </div>
 
     <!-- Bootstrap JS Bundle -->
