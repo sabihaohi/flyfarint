@@ -1,0 +1,70 @@
+* {
+    padding: 0%;
+    margin: 0% !important;
+}
+.nav {
+    width: 250px;
+}
+
+.accordion-button {
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+    height: 35px !important;
+    margin-top: 3px !important;
+    box-shadow: none;
+}
+
+.list-group-item:hover {
+    color: rgba(27, 89, 146, 0.986) !important;
+    border-left: 3px solid rgba(27, 89, 146, 0.986) !important;
+    cursor: pointer;
+}
+
+.list-group-item {
+    margin: 0px;
+    padding: 3px 7px 3px 12px;
+    font-size: 16px;
+}
+
+.management {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+
+.fas {
+    font-size: 10px;
+    margin-right: 10px;
+}
+
+.manage1 {
+    color: rgb(49, 197, 197);
+}
+.manage2 {
+    color: rgb(184, 28, 184);
+}
+.manage3 {
+    color: rgb(255, 196, 1);
+    background-color: rgba(238, 217, 25, 0.157);
+    border-radius: 10px;
+}
+.manage4{
+    color: rgb(39, 200, 39);
+}
+.manage5 {
+    color: rgb(224, 77, 40);
+}
+
+.bottom-box {
+    width: 30%;
+    max-width: 300px;
+    padding: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.inner-title {
+    width: 60%;
+    font-weight: 500 !important;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.863);
+}
