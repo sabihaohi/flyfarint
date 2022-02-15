@@ -155,15 +155,63 @@
                     aria-controls="offcanvasScrolling"><i class="fas fa-bars fs-2"></i></button>
             </div>
 
+            <div class="d-md-flex mt-3 justify-content-between align-items-center d-none">
+                <div class="position-relative">
+                    <i class="fas fa-search fs-6 position-absolute text-secondary" style="top: 8px; left: 8px"></i>
+                    <input class="form-control form-control-sm ps-5" type="text" placeholder="Search"
+                        aria-label="search">
+                </div>
+                <div class="btn-group">
+                    <div class="me-2 mt-2">
+                        <i class="fas fa-bell fs-4"></i>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false"><i class="fas fa-user-circle fs-4"></i>
+                    </button>
+                    <ul class="dropdown-menu shadow" style="width: 175px;">
+                        <div class="d-flex">
+                            <div class="p-2">
+                                <i class="fas fa-user-circle fs-3"></i>
+                            </div>
+                            <div class="ms-1">
+                                <h6>Fahim</h6>
+                                <span>Developer</span>
+                            </div>
+                        </div>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">My Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Chat</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
             <!-- Off Canvus Start -->
             <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
                 id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
                 <div class="offcanvas-header">
-                    <div class="w-50 mx-auto mt-4">
+                    <div class="w-25 mx-auto mt-1">
                         <img src="images/logo.png" alt="fly far logo" class="img-fluid">
                     </div>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
+                </div>
+                <div class="position-relative mx-3" style="width: 70%">
+                    <i class="fas fa-search fs-6 position-absolute text-secondary" style="top: 8px; left: 8px"></i>
+                    <input class="form-control form-control-sm ps-5" type="text" placeholder="Search"
+                        aria-label="search">
                 </div>
                 <div class="offcanvas-body">
                     <nav class="nav">
