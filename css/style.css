@@ -87,6 +87,20 @@ body {
     color: rgb(66, 66, 252);
 }
 
+.card:hover {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: black;
+    color: white !important;
+    transform: scale(1.05);
+    transition: transform linear 0.3s;
+}
+.card:hover .text-primary, 
+.card:hover .text-secondary,
+.card:hover .text-dark,
+.card:hover .inner-title{
+    color: white !important;
+}
+
 @media only screen and (max-width: 992px) {
     .bottom-boxes3{
         width: 60%;
